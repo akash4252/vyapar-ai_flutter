@@ -39,6 +39,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Generate clean Android platform
+        run: flutter create --platforms=android .
+
       - name: Get Dependencies
         run: flutter pub get
 
