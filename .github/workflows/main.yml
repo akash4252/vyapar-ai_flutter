@@ -40,7 +40,7 @@ jobs:
           cache: true
 
       - name: Generate clean Android platform
-        run: flutter create --platforms=android .
+        run: flutter create --platforms=android --project-name=vyapar_ai_flutter .
 
       - name: Get Dependencies
         run: flutter pub get
